@@ -10,6 +10,7 @@ import DropeArow from "../assets/img/png/DownArrow (1).png";
 import BlackNextarrow from "../assets/img/png/NextArrowblack.png";
 import right_arrow from "../assets/img/png/right_arrow.png";
 import hero_bg from "../assets/img/png/hero_bg.png";
+import green_dot from "../assets/img/svg/green dot.svg";
 
 function Header() {
   return (
@@ -107,6 +108,19 @@ function Header() {
                       <h3 className="fs_md fw-semibold ff_Seoge text_black mb-0 ">
                         Contacted
                       </h3>
+                    </div>
+                    <div
+                      className=" position-absolute custom_h_w bg-white d-flex justify-content-center align-items-center"
+                      style={{ bottom: "-40%" }}
+                    >
+                      <div className="d-flex align-items-center px-2 rounded-3">
+                        <p className=" mb-0 fw-semibold fs_sm">Active leads</p>
+                        <img
+                          className=" ms-1"
+                          src={green_dot}
+                          alt="green_dot"
+                        />
+                      </div>
                     </div>
                   </div>
                   <div

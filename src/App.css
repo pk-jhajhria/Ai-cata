@@ -83,6 +83,11 @@
   z-index: -1;
   animation: bgLayer1 20s ease-in-out 0s infinite forwards;
 }
+.custom_h_w {
+  margin-top: 50px;
+  max-width: 80px;
+  min-height: 27px;
+}
 @keyframes bgLayer1 {
   0% {
     top: 0;
@@ -108,34 +113,9 @@
   bottom: 0;
   background-color: white;
   transform: translate(100%, 20%);
-  animation: animbox5 9s linear 0s infinite forwards;
   max-height: 80px;
 }
-@keyframes animbox5 {
-  0% {
-    top: 0;
-    transform: translate(100%, -50%);
-  }
-  25% {
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-  }
-  50% {
-    bottom: 0;
-    left: 0;
-    transform: translate(-50%, 100%);
-  }
-  75% {
-    bottom: 0;
-    left: 50%;
-    transform: translate(100%, 100%);
-  }
-  100% {
-    top: 0;
-    transform: translate(100%, -50%);
-  }
-}
+
 .boxAnimation1 {
   animation: animbox1 5s linear 0s infinite forwards;
 }
@@ -164,18 +144,15 @@
 }
 @keyframes animbox3 {
   0% {
-    transform: rotate(-30deg) translate(50px, -100px);
+    transform: rotate(30deg) translate(50px, -100px);
   }
 
   50% {
     transform: rotate(0deg) translate(50px, 0px);
   }
 
-  90% {
-    transform: rotate(-28deg) translate(50px, -100px) rotatex(0deg);
-  }
   100% {
-    transform: rotate(-30deg) translate(50px, -100px) rotatex(360deg);
+    transform: rotate(30deg) translate(50px, -100px);
   }
 }
 .boxAnimation2 {
@@ -210,15 +187,12 @@
     transform: rotate(10deg) translate(0px, 0px);
   }
 
-  70% {
+  75% {
     transform: rotate(-10deg) translate(0px, 0px);
   }
 
-  90% {
-    transform: rotate(10deg) translate(0px, 0px);
-  }
   100% {
-    transform: rotate(0deg) translate(5px, 1px);
+    transform: rotate(0deg);
   }
 }
 
@@ -302,7 +276,7 @@
   display: none;
 }
 
-has context menu .hover_box_services:hover {
+.hover_box_services:hover {
   background-color: #07133b !important;
 }
 .hover_box_services:hover p {
