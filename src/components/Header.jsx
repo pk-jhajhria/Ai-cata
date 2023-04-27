@@ -17,7 +17,7 @@ function Header() {
     <>
       <section className="position-relative overflow-hidden py-sm-5">
         <img
-          className=" position-absolute start-0 z_index_1 d-none d-md-block"
+          className=" position-absolute z_index_1 d-none d-md-block hero_bg_animation"
           src={hero_bg}
           alt="hero_bg"
         />

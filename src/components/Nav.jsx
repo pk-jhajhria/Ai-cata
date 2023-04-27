@@ -49,7 +49,7 @@ function Nav() {
                       />
                     </a>{" "}
                     <a
-                      className="fw-semibold fs_xl text-black ps-2 d-inline-block"
+                      className="fw-semibold fs_xl text-black ps-2 d-inline-block text_stroke_nav"
                       href="#"
                     >
                       Financial Services
@@ -65,7 +65,7 @@ function Nav() {
                       />
                     </a>
                     <a
-                      className="fw-semibold fs_xl text-black ps-2 d-inline-block"
+                      className="fw-semibold fs_xl text-black ps-2 d-inline-block text_stroke_nav"
                       href="#"
                     >
                       Real Estate
@@ -74,16 +74,19 @@ function Nav() {
                 </ul>
               </div>
               <ul className="d-flex align-items-center mb-0 gap-4 d-none d-lg-flex">
-                <span className=" primary_btn nav_link_after_line position-relative">
+                <span className=" primary_btn">
                   <a
-                    className="fw-semibold text_green fs_xl text_hover"
+                    className="fw-semibold text_green fs_xl text_hover rounded-2 sign_up_btn"
                     href="#"
                   >
                     Sign up
                   </a>
                 </span>
-                <span className="primary_btn_border nav_link_after_line  position-relative">
-                  <a className=" fw-semibold text_green text_hover" href="#">
+                <span className="primary_btn_border">
+                  <a
+                    className=" fw-semibold text_green text_hover rounded-2 log_in_btn"
+                    href="#"
+                  >
                     Log in <img src={logIn} alt="logIn" />
                   </a>
                 </span>

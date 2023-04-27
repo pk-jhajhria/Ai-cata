@@ -313,6 +313,130 @@
   background-color: #1ad079 !important;
   transition: all 250ms ease-in-out;
 }
+
+/* loader */
+.Loader {
+  z-index: 5;
+  background-color: #000000;
+}
+.Overlay_loader {
+  background-color: #000000;
+}
+.fs_loader {
+  font-size: 18px;
+  -webkit-text-stroke: 2px #fcfffe;
+  color: #fcfffe;
+  line-height: 35px;
+  letter-spacing: 4px;
+}
+.Dot_loader {
+  height: 10px;
+  width: 10px;
+  background-color: #fcfffe;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.LoaderAnimation1 {
+  animation: loader1 1s linear 0s infinite alternate;
+}
+.LoaderAnimation2 {
+  animation: loader1 1.2s linear 0s infinite alternate;
+}
+.LoaderAnimation3 {
+  animation: loader1 1.3s linear 0s infinite alternate;
+}
+.LoaderAnimation4 {
+  animation: loader1 1.4s linear 0s infinite alternate;
+}
+@keyframes loader1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.loader {
+  background-color: black;
+}
+
+.simple-spinner {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.simple-spinner span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  border-right-color: rgba(255, 255, 255, 0.7);
+  animation: spinner-anim 0.8s linear infinite;
+}
+.sign_up_btn {
+  border: 2px solid transparent;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.sign_up_btn:hover {
+  border: 2px solid #1ad079;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #07133b !important;
+}
+.log_in_btn {
+  border: 2px solid #1ad079 !important;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.log_in_btn:hover {
+  border: 2px solid #1ad079 !important;
+  background-color: #07133b !important;
+}
+.text_stroke_nav:hover {
+  -webkit-text-stroke-color: #1ad079 !important;
+  -webkit-text-stroke-width: 0.5px !important;
+  color: #1ad079 !important;
+}
+.hero_bg_animation {
+animation: herobg 1s linear 0 infinite forwards;
+}
+@keyframes herobg {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  50% {
+    top: 0;
+    left: 100%;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes spinner-anim {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px !important;
